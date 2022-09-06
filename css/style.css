@@ -77,13 +77,22 @@ body{
 
 .hero__logo img{
     width: 600px;
+    -webkit-animation:roll-in-left .5s ease-out both;animation:roll-in-left .5s ease-out both;
+    animation-delay: 0.5s;
 }
+
+ @-webkit-keyframes roll-in-left{0%{-webkit-transform:translateX(-800px) rotate(-540deg);transform:translateX(-800px) rotate(-540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}@keyframes roll-in-left{0%{-webkit-transform:translateX(-800px) rotate(-540deg);transform:translateX(-800px) rotate(-540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}
+
 
 .hero__texto h2{
     font-size: 50px;
     color:black;
     text-shadow:1px 4px 10px white;
+    animation:slide-in-blurred-top .6s cubic-bezier(.23,1.000,.32,1.000) both;
+    animation-delay: 1s;
 }
+
+ @keyframes slide-in-blurred-top{0%{transform:translateY(-1000px) scaleY(2.5) scaleX(.2);transform-origin:50% 0;filter:blur(40px);opacity:0}100%{transform:translateY(0) scaleY(1) scaleX(1);transform-origin:50% 50%;filter:blur(0);opacity:1}}
 
 /* PRODUCTOS MAS VENDIDOS */
  .productos{
@@ -120,7 +129,11 @@ body{
     padding: 10px;
     margin-bottom: 20px;
 } 
-
+.productos__card:hover{
+    transform: scale(1.1) translateY(-10px);
+    transition: transform 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
 
 .productos__card-img{
     width:100%;
@@ -176,6 +189,11 @@ body{
     flex-direction: column;
     border: 2px solid #345c72;
     align-items: center;
+}
+.reseñas__card:hover{
+   
+    transition:all;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .reseñas__card-img{
