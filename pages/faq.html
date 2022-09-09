@@ -5,65 +5,110 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Preguntas Frecuentes</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
          <!-- Encabezado -->
-         <header class="header">
-            <div class=header__content>
-                <a  class="header__content-logo" href="../index.html">
-                    <img src="../assets/Logo Blanco.png" alt="Logo Instinto">
-                </a>
-                <nav>
-                    <ul class="header__content-navbar">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="quienes_somos.html">Quienes Somos</a></li>
-                        <li><a href="faq.html">Preguntas Frecuentes</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+         <header>
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <div class="container">
+                  <a class="navbar-brand" href="../index.html">
+                    <img class="img__logo" src="../assets/Logo Blanco.png" alt="logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link "  href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./quienes_somos.html">Quienes Somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./faq.html">Preguntas Frecuentes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
                     </ul>
-                </nav>
-            </div>
+                  </div>
+                </div>
+              </nav>
         </header>
 
             <!-- Contenido Principal -->
         <main class="preguntas__container">
             <!-- Preguntas Frecuentes -->
-            <section class="preguntas">
+            <h1>Preguntas Frecuentes</h1>
+            <section>
+                <div class="accordion accordion-flush container" id="accordionFlushExample">
 
-                <h1>Preguntas Frecuentes</h1>
-                    <div>
-                        <h2>¿Los productos tienen cambio?</h2>
-                        <p>Los productos personalizados NO tienen cambio ya que se hacen por pedido especialmente para cada cliente. Solo se realizará el cambio en el caso de que haya algún error de parte nuestra o alguna falla en el producto. En el caso de que se arrepientan de haber hecho una compra sólo podremos reintegrarles el dinero si todavía no llegamos a realizar el pedido.
-                        </p>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ¿Los productos tienen cambio?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Los productos personalizados NO tienen cambio ya que se hacen por pedido especialmente para cada cliente. Solo se realizará el cambio en el caso de que haya algún error de parte nuestra o alguna falla en el producto. En el caso de que se arrepientan de haber hecho una compra sólo podremos reintegrarles el dinero si todavía no llegamos a realizar el pedido. </div>
+                      </div>
                     </div>
 
-                    <div>
-                        <h2>¿Hacen envíos?</h2>
-                        <p>SI. Los pedidos se pueden retirar por mi domicilio pero también hacemos envíos por Correo Argentino a todo el país, pueden elegir para que sea a domicilio o a la sucursal más cercana. El costo de envío corre por cuenta del comprador.
-                        </p>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        ¿Hacen envíos?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">SI. Los pedidos se pueden retirar por mi domicilio pero también hacemos envíos por Correo Argentino a todo el país, pueden elegir para que sea a domicilio o a la sucursal más cercana. El costo de envío corre por cuenta del comprador. </div>
+                      </div>
                     </div>
 
-                    <div>
-                        <h2>Medios de Pagos</h2>
-                        <p>Trabajamos con Transferencia Bancaria y MercadoPago, esto incluye el pago en efectivo en cualquier Rapipago o Pago fácil, con tarjeta de crédito o débito o dinero en cuenta. Es importante que sepan que solo realizaremos el producto una vez abonada la totalidad del pedido. NO se puede abonar al momento de la entrega. Les pido consideración con este punto ya que son todos productos hechos por pedido, especialmente para ustedes!!
-                        </p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Medios de Pagos
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Trabajamos con Transferencia Bancaria y MercadoPago, esto incluye el pago en efectivo en cualquier Rapipago o Pago fácil, con tarjeta de crédito o débito o dinero en cuenta. Es importante que sepan que solo realizaremos el producto una vez abonada la totalidad del pedido. NO se puede abonar al momento de la entrega. Les pido consideración con este punto ya que son todos productos hechos por pedido, especialmente para ustedes!! </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <h2>¿Cómo puedo hacerles una consulta antes de comprar?</h2>
-                        <p>En el menú principal de la página está la parte de CONTACTO, ahí pueden dejarme su consulta y la responderemos por mail. Pero si quieren algo más rápido abajo a la derecha tienen un globito de chat, ahí pueden contactarse directamente por WhatsApp por cualquier cosa que necesiten que le respondamos con urgencia. También al final de la página van a encontrar los accesos directos a la página de Facebook e Instagram para sacarse dudas y ver más de nuestros trabajos.
-                        </p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            ¿Cómo puedo hacerles una consulta antes de comprar?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">En el menú principal de la página está la parte de CONTACTO, ahí pueden dejarme su consulta y la responderemos por mail. Pero si quieren algo más rápido abajo a la derecha tienen un globito de chat, ahí pueden contactarse directamente por WhatsApp por cualquier cosa que necesiten que le respondamos con urgencia. También al final de la página van a encontrar los accesos directos a la página de Facebook e Instagram para sacarse dudas y ver más de nuestros trabajos. </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <h2>¿Cómo hago para contarles qué diseño quiero en el producto personalizado</h2>
-                        <p>En el caso de elegir productos personalizados hacen la compra por el tipo de producto, no por el diseño que figura en las fotos, ya que son solo de ejemplo. Los diseños posibles son tantos como personas que lo necesiten, ya que son personalizados y puede ir LITERAL lo que vos quieras. Una vez realizada la compra nos comunicamos o se comunican ustedes para definir esto. Acuérdense de que siempre pueden hacernos todas las preguntas que quieran antes de realizar el pago. Si lo que desean en su producto es una imagen en particular o una foto que ustedes tienen seguramente les vamos a pedir que la envíen por mail así nos llega con mejor calidad, pero también la pueden mandar por WhatsApp o Messenger.
-                        </p>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            ¿Cómo hago para contarles qué diseño quiero en el producto personalizado?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">En el caso de elegir productos personalizados hacen la compra por el tipo de producto, no por el diseño que figura en las fotos, ya que son solo de ejemplo. Los diseños posibles son tantos como personas que lo necesiten, ya que son personalizados y puede ir LITERAL lo que vos quieras. Una vez realizada la compra nos comunicamos o se comunican ustedes para definir esto. Acuérdense de que siempre pueden hacernos todas las preguntas que quieran antes de realizar el pago. Si lo que desean en su producto es una imagen en particular o una foto que ustedes tienen seguramente les vamos a pedir que la envíen por mail así nos llega con mejor calidad, pero también la pueden mandar por WhatsApp o Messenger. </div>
+                      </div>
                     </div>
+
+                </div>
                 
+                    
             </section>
    
         </main>
@@ -113,6 +158,6 @@
                 <img src="../assets/whatsapp-logo-11.png" alt="whatsapp" width="50px">
             </a>
         </div>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
     </body>
 </html>

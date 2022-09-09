@@ -5,27 +5,43 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Productos</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- Encabezado -->
-        <header class="header">
-            <div class=header__content>
-                <a  class="header__content-logo" href="../index.html">
-                    <img src="../assets/Logo Blanco.png" alt="Logo Instinto">
-                </a>
-                <nav>
-                    <ul class="header__content-navbar">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="quienes_somos.html">Quienes Somos</a></li>
-                        <li><a href="faq.html">Preguntas Frecuentes</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <div class="container">
+                  <a class="navbar-brand" href="../index.html">
+                    <img class="img__logo" src="../assets/Logo Blanco.png" alt="logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./quienes_somos.html">Quienes Somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./faq.html">Preguntas Frecuentes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
                     </ul>
-                </nav>
-            </div>
+                  </div>
+                </div>
+              </nav>
         </header>
 
             <!-- Contenido Principal -->
@@ -35,97 +51,134 @@
             <section class="productos__principal">
                 <h1>ELEGÍ EL PRODUCTO QUE MAS TE GUSTE</h1>
                 <h2>LO PERSONALIZAMOS A TU GUSTO</h2>
-                <div class="productos__container">
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/1.jpg" alt="jarrito sublimado"/>
-                        <h4 class="productos__card-titulo" >Jarrito Termico</h4>
-                        <a class="btn"  href="contacto.html">PEDILO</a>
-                    </div>
-    
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/2.jpg" alt="taza de cafe perzonalizada"/>
-                        <h4 class="productos__card-titulo" >Taza Personalizada</h4>
-                        <a class="btn" href="contacto.html">PEDILO</a>
-                    </div>
-    
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/3.jpg" alt="pijama sublimado"/>
-                        <h4 class="productos__card-titulo" >Set de Pijama</h4>
-                        <a class="btn" href="contacto.html">PEDILO</a>
-                    </div>
 
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/4.jpg" alt="taza personalizada"/>
-                        <h4 class="productos__card-titulo" >Taza Personalizada</h4>
-                        <a class="btn"  href="contacto.html">PEDILO</a>
-                    </div>
-    
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/5.jpg" alt="almohada perzonalizada"/>
-                        <h4 class="productos__card-titulo" >Almohada Personalizada</h4>
-                        <a class="btn" href="contacto.html">PEDILO</a>
-                    </div>
-    
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/6.jpg" alt="mate sublimado"/>
-                        <h4 class="productos__card-titulo" >Mate Personalizado</h4>
-                        <a class="btn" href="contacto.html">PEDILO</a>
-                    </div>
+                <div class="container-fluid ">
+                    <div class="row">
 
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/7.jpg" alt="almohada perosonalizada"/>
-                        <h4 class="productos__card-titulo" >Almohada Personalizada</h4>
-                        <a class="btn"  href="contacto.html">PEDILO</a>
-                    </div>
-    
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/8.jpg" alt="remeras sublimadas"/>
-                        <h4 class="productos__card-titulo" >Remera Sublimada</h4>
-                        <a class="btn" href="contacto.html">PEDILO</a>
-                    </div>
-    
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/9.jpg" alt="taza sublimada"/>
-                        <h4 class="productos__card-titulo" >Taza Personalizada</h4>
-                        <a class="btn" href="contacto.html">PEDILO</a>
-                    </div>
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/1.jpg" alt="jarrito sublimado"/>
+                                <h4 class="productos__card-titulo" >Jarrito Termico</h4>
+                                <a class="btn"  href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
 
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/10.jpg" alt="jarrito termico"/>
-                        <h4 class="productos__card-titulo" >Jarrito Termico</h4>
-                        <a class="btn"  href="contacto.html">PEDILO</a>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/2.jpg" alt="taza de cafe perzonalizada"/>
+                                <h4 class="productos__card-titulo" >Taza Personalizada</h4>
+                                <a class="btn" href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/3.jpg" alt="pijama sublimado"/>
+                                <h4 class="productos__card-titulo" >Set de Pijama</h4>
+                                <a class="btn" href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/4.jpg" alt="taza personalizada"/>
+                                <h4 class="productos__card-titulo" >Taza Personalizada</h4>
+                                <a class="btn"  href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/5.jpg" alt="almohada perzonalizada"/>
+                                <h4 class="productos__card-titulo" >Almohada Personalizada</h4>
+                                <a class="btn" href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/6.jpg" alt="mate sublimado"/>
+                                <h4 class="productos__card-titulo" >Mate Personalizado</h4>
+                                <a class="btn" href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/7.jpg" alt="almohada perosonalizada"/>
+                                <h4 class="productos__card-titulo" >Almohada Personalizada</h4>
+                                <a class="btn"  href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/8.jpg" alt="remeras sublimadas"/>
+                                <h4 class="productos__card-titulo" >Remera Sublimada</h4>
+                                <a class="btn" href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/9.jpg" alt="taza sublimada"/>
+                                <h4 class="productos__card-titulo" >Taza Personalizada</h4>
+                                <a class="btn" href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/10.jpg" alt="jarrito termico"/>
+                                <h4 class="productos__card-titulo" >Jarrito Termico</h4>
+                                <a class="btn"  href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/11.jpg" alt="macetas perosonalizada"/>
+                                <h4 class="productos__card-titulo" >Macetas Personalizadas</h4>
+                                <a class="btn" href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/12.jpg" alt="taza sublimadas"/>
+                                <h4 class="productos__card-titulo" >Taza Personalizada</h4>
+                                <a class="btn" href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/13.jpg" alt="taza perzonalizada"/>
+                                <h4 class="productos__card-titulo" >Taza Personalizada</h4>
+                                <a class="btn"  href="contacto.html">PEDILO</a>
+                            </div>
+            
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/14.jpg" alt="jarrito termico"/>
+                                <h4 class="productos__card-titulo" >Jarrito Termico</h4>
+                                <a class="btn" href="contacto.html">PEDILO</a>
+                            </div>
+            
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 col-xs-12 d-flex justify-content-center">
+                            <div class="productos__card">
+                                <img class="productos__card-img"  src="../assets/productos/15.jpg" alt="jarrito termico"/>
+                                <h4 class="productos__card-titulo" >Jarrito Termico</h4>
+                                <a class="btn" href="contacto.html">PEDILO</a>
+                            </div>
+                        </div>
                     </div>
-    
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/11.jpg" alt="macetas perosonalizada"/>
-                        <h4 class="productos__card-titulo" >Macetas Personalizadas</h4>
-                        <a class="btn" href="contacto.html">PEDILO</a>
-                    </div>
-    
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/12.jpg" alt="taza sublimadas"/>
-                        <h4 class="productos__card-titulo" >Taza Personalizada</h4>
-                        <a class="btn" href="contacto.html">PEDILO</a>
-                    </div>
-
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/13.jpg" alt="taza perzonalizada"/>
-                        <h4 class="productos__card-titulo" >Taza Personalizada</h4>
-                        <a class="btn"  href="contacto.html">PEDILO</a>
-                    </div>
-    
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/14.jpg" alt="jarrito termico"/>
-                        <h4 class="productos__card-titulo" >Jarrito Termico</h4>
-                        <a class="btn" href="contacto.html">PEDILO</a>
-                    </div>
-    
-                    <div class="productos__card">
-                        <img class="productos__card-img"  src="../assets/productos/15.jpg" alt="jarrito termico"/>
-                        <h4 class="productos__card-titulo" >Jarrito Termico</h4>
-                        <a class="btn" href="contacto.html">PEDILO</a>
-                    </div>
-
                 </div>
                 
             </section>
@@ -178,6 +231,6 @@
                 <img src="../assets/whatsapp-logo-11.png" alt="whatsapp" width="50px">
             </a>
         </div>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
     </body>
 </html>
