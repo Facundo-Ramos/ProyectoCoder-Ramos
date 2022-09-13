@@ -1,7 +1,8 @@
 *{  
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box; 
+    /* font-family: 'League Spartan';  */
 }
 
 a {
@@ -14,7 +15,7 @@ li {
 
 
 body{
-    /* font-family: 'League Spartan'; */
+     
     background-color: #f0f0f0;
 }
 
@@ -87,7 +88,7 @@ body{
     height: 370px;
     background-color: #ffffff;
     border-radius: 5px;
-    border: 2px solid #345c72;
+    border: 2px solid black;
     padding: 10px;
     margin-bottom: 20px;
 } 
@@ -447,24 +448,11 @@ body{
 }
 
 @media screen and (max-width: 768px){
-    .header__content{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;  
-        
-    }
-    
-    .header__content-logo img{
-        width:60px ;
-     }
-     
 
     .hero{
-        
         height: 40vh;
- 
     }
+
     .hero__logo img{
         width: 400px;
     }
@@ -482,30 +470,14 @@ body{
     "texto"
     "contacto";
     }
+
     .contacto__texto{
         height: 50vh;
-    }
-
-    
-    
+    } 
 }
 
 @media screen and (max-width: 576px){
-    .header__content{
-        display: flex;
-        justify-content:space-between;
-        
-    }
     
-    .header__content-logo img{
-        display: none;
-     }
-     .productos__card{
-        width: 
-        
-    
-    }
-
     .footer{
         display: flex;
         flex-direction: column;
@@ -514,6 +486,7 @@ body{
     .footer__contacto{
         text-align: center;
     }
+    
     .main__quienes-somos{
         display: flex;
         flex-direction: column;
@@ -523,48 +496,43 @@ body{
         display: flex;
     }
     
-    .presentacion__izquierda{
-       
+    .presentacion__izquierda{  
         width: 50%;
         height: 50vh;
         background-image:linear-gradient(rgba(52, 92, 114, 1), rgba(244,101,48,0.8))
-        
+ 
     }
     
     .presentacion__izquierda h1{
-        font-size: 40px;
+        font-size: 30px;
         width: 65%;
         margin: auto;
         margin-top: 20px;
         color:#ffffff
     }
-    
-    
-    
-    .presentacion__derecha{
-       
-        height:50vh ;
-       
+
+    .presentacion__izquierda p{
+        font-size: 14px;
     }
+    
+    .presentacion__derecha{ 
+        height:50vh ;
+    }
+
     .presentacion__productos-derecha h1{
-        font-size: 40px;
+        font-size: 30px;
+    }
+    .presentacion__productos-derecha p{
+        font-size: 14px;
     }
     .contacto__form textarea{
         margin: 0%;
         width: 90%;
-
     }
 }
 
 @media screen and (max-width: 450px){
-    .header__content{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;  
-        
-    }
-    
+
     .hero{
         
         height: 40vh;
@@ -615,29 +583,32 @@ body{
     }
        
     .preguntas__container{
-        height: 130vh;
+        height: 102vh;
     }
-     .contacto{
-        background-color: #345c72;
+    
+ 
+     .contacto__container{
+        height: 65vh;
      }
-     .contacto__texto{
-         height: 60vh;
+
+     .contacto__texto p{
+        font-size: 16px;
+        line-height: 1.5;
      }
      .contacto__formulario{
-         width: 100%;
-         border-radius: 0%;
-        
-      
+         width: 95%;
+         height: 58vh;
      }
-     .contacto__container{
-         height:100%;
-         margin-bottom: 0;
-       
-   
-     }
+
      .contacto__form textarea{
          margin: 0%;
          width: 100%;
 
      }
+}
+
+@media screen and (max-width: 380px){
+    .preguntas__container{
+        height:115vh;
+    } 
 }
