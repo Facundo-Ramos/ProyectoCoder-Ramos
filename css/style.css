@@ -588,16 +588,24 @@ body{
     
  
      .contacto__container{
-        height: 65vh;
+        height: 75vh;
+     }
+
+     .contacto__texto{
+        height: 45vh;
+     }
+
+
+     .contacto__texto h1{
+        font-size: 35px;
      }
 
      .contacto__texto p{
         font-size: 16px;
-        line-height: 1.5;
      }
      .contacto__formulario{
          width: 95%;
-         height: 58vh;
+         height: 65vh;
      }
 
      .contacto__form textarea{
@@ -609,6 +617,6 @@ body{
 
 @media screen and (max-width: 380px){
     .preguntas__container{
-        height:115vh;
+        height:120vh;
     } 
 }
