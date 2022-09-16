@@ -1,0 +1,47 @@
+/* FOOTER */
+.footer__container{
+    background-color:$colorPrincipal;
+    padding: 20px;
+   
+    .footer{
+        display: flex;
+        justify-content: space-between;
+
+        .footer__redes{
+            color: black;
+        }
+
+        .footer__redes-logos{
+            display: flex;
+            justify-content:space-around;
+
+            .footer__redes-img{
+                img{
+                    width: 40px;
+                    margin-top: 5px;    
+                }
+            } 
+        }
+
+        .footer__pagos{
+            text-align: center;
+            color:black;
+        }
+
+        .footer__contacto{
+            text-align: center;
+            color: black;
+        }
+    }
+
+    .footer__copyright{
+        text-align: center;
+        color: rgb(244, 101, 48);
+    } 
+}
+
+
+
+
+
+

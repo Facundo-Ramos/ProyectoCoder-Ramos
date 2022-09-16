@@ -1,0 +1,26 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* font-family: 'League Spartan';  */
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+body{   
+    background-color: #f0f0f0;
+}
+
+/*WHATSAPP  */
+.whatsapp{
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+}
