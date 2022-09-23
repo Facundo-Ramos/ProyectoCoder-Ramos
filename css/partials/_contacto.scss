@@ -1,0 +1,180 @@
+/* CONTACTO */
+
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "texto contacto";
+    max-width: 1400px;
+
+    .contacto__texto{
+        background-image:linear-gradient(rgba(52, 92, 114, 0.3), rgba(244,101,48,0.0)), url(../assets/Imagen\ para\ contacto.webp);
+        background-size: cover;
+        background-position: center center;
+        height:80vh;
+        grid-area: texto;
+
+        & h1{
+            font-size: 50px;
+            width: 65%;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color:#345c72
+        }
+        & p{
+            font-size: 20px;
+            width: 65%;
+            line-height: 1.5;
+            margin: auto;
+            color: #111111;
+        }
+    }
+
+    .contacto__container{
+        height:80vh;
+        background-image:linear-gradient(rgba(52, 92, 114, 1), rgba(244,101,48,0.0)) ;
+        grid-area: contacto;
+
+        & h2{
+            margin-top: 5px;
+            padding: 0;
+            text-align: center;
+            color: #ffffff;
+        }
+        .contacto__formulario{
+            margin: 20px auto;
+            width: 70%;
+            height: 70vh;
+            padding: 20px;
+            background-color:#345c72;
+            border-radius: 10px;
+
+            .contacto__form{
+                & label{
+                    color: #ffffff;
+                }
+
+                & input{
+                    width: 100%;
+                    padding: px 0;
+                    color: white;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid white;
+                    margin-bottom: 30px;
+                }
+
+                & textarea{
+                    border-radius: 5px;
+                    background-color: #ffffffbe;
+                    margin-bottom: 5px;
+                    width: 100%;
+                }
+            }
+
+            .checkbox{
+                text-align: center;
+                margin-bottom: 10px;
+
+                & input, label{
+                    cursor: pointer;
+                }
+            }
+
+            .contacto__boton{
+                text-align: center;
+
+                & button{
+                    font-family: 'League Spartan', sans-serif;
+                    background-color: #ffffffbe;
+                    cursor: pointer;
+                    padding: 5px;
+                    border-radius: 10px;  
+                }  
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+
+    .contacto__container{
+        .contacto__formulario{
+            width: 80%;
+
+            .contacto__form textarea{
+                margin: 0%;
+                width: 100%;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 768px){
+
+    .contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "texto"
+    "contacto";
+        .contacto__texto{
+             height: 50vh;
+        } 
+    }
+}
+
+@media screen and (max-width: 576px){
+    .contacto__form textarea{
+        margin: 0%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .contacto{
+
+        .contacto__texto{
+            height: 45vh;
+
+            & h1{
+                font-size: 35px;
+             }
+         
+            & p{
+                font-size: 16px;
+             }
+         }
+
+         .contacto__container{
+            height: 75vh;
+
+            .contacto__formulario{
+                width: 95%;
+                height: 65vh;
+
+                .contacto__form textarea{
+                    margin: 0%;
+                    width: 100%;
+                }
+            }
+         }
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

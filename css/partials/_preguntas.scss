@@ -1,0 +1,46 @@
+/* PREGUNTAS FRECUENTES */
+
+.preguntas__container{
+    background-image:linear-gradient(rgba(52, 92, 114, 1), rgba(244,101,48,0));
+    background-size: cover;
+    background-position: center center;
+    height: 78vh;
+    text-align: center;
+    color: #f0f0f0;
+
+    .preguntas__container h1{
+        margin-bottom: 5%;
+    }
+
+    .accordion{
+
+        .accordion-item{
+            
+            .accordion-header{
+
+                .accordion-button{
+                    background-color: #345c72;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px){ 
+    .preguntas__container{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .preguntas__container{
+        height: 102vh;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .preguntas__container{
+        height:120vh;
+    } 
+}

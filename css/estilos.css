@@ -99,6 +99,32 @@ body {
     opacity: 1;
   }
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 40vh;
+  }
+  .hero .hero__logo img {
+    width: 400px;
+  }
+  .hero .hero__texto {
+    font-size: 30px;
+    color: black;
+    text-shadow: 1px 4px 10px white;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero {
+    height: 40vh;
+  }
+  .hero .hero__logo img {
+    width: 300px;
+  }
+  .hero .hero__texto {
+    font-size: 20px;
+    color: black;
+    text-shadow: 1px 4px 10px white;
+  }
+}
 .productos {
   padding: 10px;
   padding-top: 10px;
@@ -232,4 +258,364 @@ body {
 .footer__container .footer__copyright {
   text-align: center;
   color: rgb(244, 101, 48);
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__contacto {
+    text-align: center;
+  }
+}
+.productos__principal {
+  padding: 10px;
+  padding-top: 10px;
+}
+.productos__principal .productos__principal h1 {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(244, 101, 48);
+  padding: 10px;
+}
+.productos__principal .productos__principal h2 {
+  text-align: center;
+  font-size: 28px;
+  color: rgb(52, 92, 114);
+  margin-bottom: 20px;
+}
+.productos__principal .container-fluid {
+  align-items: center;
+}
+.productos__principal .container-fluid .productos__card {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 370px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.productos__principal .container-fluid .productos__card:hover {
+  transform: scale(1.1) translateY(-10px);
+  transition: transform 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.productos__principal .container-fluid .productos__card .productos__card-img {
+  width: 100%;
+  height: 280px;
+  margin-bottom: 10px;
+}
+.productos__principal .container-fluid .productos__card .productos__card-titulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(49, 49, 49);
+  margin-bottom: 5px;
+}
+.productos__principal .container-fluid .productos__card .btn {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  background-color: #345c72;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* PREGUNTAS FRECUENTES */
+.preguntas__container {
+  background-image: linear-gradient(rgb(52, 92, 114), rgba(244, 101, 48, 0));
+  background-size: cover;
+  background-position: center center;
+  height: 78vh;
+  text-align: center;
+  color: #f0f0f0;
+}
+.preguntas__container .preguntas__container h1 {
+  margin-bottom: 5%;
+}
+.preguntas__container .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #345c72;
+  color: white;
+}
+
+@media screen and (max-width: 850px) {
+  .preguntas__container {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .preguntas__container {
+    height: 102vh;
+  }
+}
+@media screen and (max-width: 380px) {
+  .preguntas__container {
+    height: 120vh;
+  }
+}
+/* QUIENES SOMOS */
+.main__quienes-somos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.main__quienes-somos .presentacion {
+  display: flex;
+}
+.main__quienes-somos .presentacion .presentacion__izquierda {
+  width: 50%;
+  height: 80vh;
+  background-image: linear-gradient(rgb(52, 92, 114), rgba(244, 101, 48, 0.8));
+}
+.main__quienes-somos .presentacion .presentacion__izquierda h1 {
+  font-size: 50px;
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+  color: #ffffff;
+}
+.main__quienes-somos .presentacion .presentacion__izquierda p {
+  font-size: 17px;
+  width: 65%;
+  line-height: 1.5;
+  margin: auto;
+}
+.main__quienes-somos .presentacion .presentacion__derecha {
+  background: url(../assets/Producto-sublimados.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+  height: 80vh;
+}
+.main__quienes-somos .presentacion__productos {
+  display: flex;
+}
+.main__quienes-somos .presentacion__productos .presentacion__productos-izquierda {
+  background: url(../assets/productos.png);
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+  height: 80vh;
+}
+.main__quienes-somos .presentacion__productos .presentacion__productos-derecha {
+  width: 50%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(244, 101, 48, 0.8), rgb(52, 92, 114));
+}
+.main__quienes-somos .presentacion__productos .presentacion__productos-derecha h1 {
+  font-size: 50px;
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+  color: #ffffff;
+}
+.main__quienes-somos .presentacion__productos .presentacion__productos-derecha p {
+  font-size: 17px;
+  width: 65%;
+  line-height: 1.5;
+  margin: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .main__quienes-somos {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__quienes-somos .presentacion {
+    display: flex;
+  }
+  .main__quienes-somos .presentacion .presentacion__izquierda {
+    width: 50%;
+    height: 50vh;
+    background-image: linear-gradient(rgb(52, 92, 114), rgba(244, 101, 48, 0.8));
+  }
+  .main__quienes-somos .presentacion .presentacion__izquierda h1 {
+    font-size: 30px;
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  .main__quienes-somos .presentacion .presentacion__izquierda p {
+    font-size: 14px;
+  }
+  .main__quienes-somos .presentacion .presentacion__derecha {
+    height: 50vh;
+  }
+  .main__quienes-somos .presentacion__productos .presentacion__productos-derecha h1 {
+    font-size: 30px;
+  }
+  .main__quienes-somos .presentacion__productos .presentacion__productos-derecha p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main__quienes-somos .presentacion .presentacion__izquierda {
+    width: 100%;
+    height: 50vh;
+  }
+  .main__quienes-somos .presentacion .presentacion__izquierda p {
+    font-size: 17px;
+    width: 65%;
+    line-height: 1.5;
+    margin: auto;
+  }
+  .main__quienes-somos .presentacion .presentacion__derecha {
+    display: none;
+  }
+  .main__quienes-somos .presentacion__productos {
+    display: flex;
+  }
+  .main__quienes-somos .presentacion__productos .presentacion__productos-izquierda {
+    display: none;
+  }
+  .main__quienes-somos .presentacion__productos .presentacion__productos-derecha {
+    width: 100%;
+    height: 50vh;
+  }
+  .main__quienes-somos .presentacion__productos .presentacion__productos-derecha p {
+    font-size: 17px;
+    width: 65%;
+    line-height: 1.5;
+    margin: auto;
+  }
+}
+/* CONTACTO */
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "texto contacto";
+  max-width: 1400px;
+}
+.contacto .contacto__texto {
+  background-image: linear-gradient(rgba(52, 92, 114, 0.3), rgba(244, 101, 48, 0)), url(../assets/Imagen\ para\ contacto.webp);
+  background-size: cover;
+  background-position: center center;
+  height: 80vh;
+  grid-area: texto;
+}
+.contacto .contacto__texto h1 {
+  font-size: 50px;
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #345c72;
+}
+.contacto .contacto__texto p {
+  font-size: 20px;
+  width: 65%;
+  line-height: 1.5;
+  margin: auto;
+  color: #111111;
+}
+.contacto .contacto__container {
+  height: 80vh;
+  background-image: linear-gradient(rgb(52, 92, 114), rgba(244, 101, 48, 0));
+  grid-area: contacto;
+}
+.contacto .contacto__container h2 {
+  margin-top: 5px;
+  padding: 0;
+  text-align: center;
+  color: #ffffff;
+}
+.contacto .contacto__container .contacto__formulario {
+  margin: 20px auto;
+  width: 70%;
+  height: 70vh;
+  padding: 20px;
+  background-color: #345c72;
+  border-radius: 10px;
+}
+.contacto .contacto__container .contacto__formulario .contacto__form label {
+  color: #ffffff;
+}
+.contacto .contacto__container .contacto__formulario .contacto__form input {
+  width: 100%;
+  padding: px 0;
+  color: white;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+}
+.contacto .contacto__container .contacto__formulario .contacto__form textarea {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7450980392);
+  margin-bottom: 5px;
+  width: 100%;
+}
+.contacto .contacto__container .contacto__formulario .checkbox {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contacto .contacto__container .contacto__formulario .checkbox input, .contacto .contacto__container .contacto__formulario .checkbox label {
+  cursor: pointer;
+}
+.contacto .contacto__container .contacto__formulario .contacto__boton {
+  text-align: center;
+}
+.contacto .contacto__container .contacto__formulario .contacto__boton button {
+  font-family: "League Spartan", sans-serif;
+  background-color: rgba(255, 255, 255, 0.7450980392);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  .contacto__container .contacto__formulario {
+    width: 80%;
+  }
+  .contacto__container .contacto__formulario .contacto__form textarea {
+    margin: 0%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "texto" "contacto";
+  }
+  .contacto .contacto__texto {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contacto__form textarea {
+    margin: 0%;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contacto .contacto__texto {
+    height: 45vh;
+  }
+  .contacto .contacto__texto h1 {
+    font-size: 35px;
+  }
+  .contacto .contacto__texto p {
+    font-size: 16px;
+  }
+  .contacto .contacto__container {
+    height: 75vh;
+  }
+  .contacto .contacto__container .contacto__formulario {
+    width: 95%;
+    height: 65vh;
+  }
+  .contacto .contacto__container .contacto__formulario .contacto__form textarea {
+    margin: 0%;
+    width: 100%;
+  }
 }/*# sourceMappingURL=estilos.css.map */
