@@ -2,13 +2,13 @@
     padding: 10px;
     padding-top: 10px;
     
-    .productos__principal h1{
+    & h1{
         text-align: center;
         font-size: 30px;
         color:rgb(244, 101, 48);
         padding: 10px;
     }
-    .productos__principal h2{
+    & h2{
         text-align: center;
         font-size: 28px;
         color: rgb(52, 92, 114);
@@ -18,15 +18,13 @@
         align-items: center;
 
         .productos__card{
+            @extend .container_card;
             display: flex;
             flex-direction: column;
-            width: 270px;
-            height: 370px;
             background-color: #ffffff;
             border-radius: 5px;
             border: 2px solid black;
-            padding: 10px;
-            margin-bottom: 20px;
+           
 
             &:hover{
                 transform: scale(1.1) translateY(-10px);

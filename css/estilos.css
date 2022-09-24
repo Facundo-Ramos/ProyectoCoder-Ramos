@@ -25,6 +25,14 @@ body {
   right: 30px;
 }
 
+/*EXTENDS */
+.container_card, .productos__principal .container-fluid .productos__card {
+  width: 270px;
+  height: 370px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 .navbar {
   background-color: #345c72;
 }
@@ -230,13 +238,14 @@ body {
 /* FOOTER */
 .footer__container {
   background-color: #345c72;
-  padding: 20px;
+  padding: 10px;
 }
 .footer__container .footer {
   display: flex;
   justify-content: space-between;
 }
 .footer__container .footer .footer__redes {
+  text-align: center;
   color: black;
 }
 .footer__container .footer .footer__redes-logos {
@@ -274,13 +283,13 @@ body {
   padding: 10px;
   padding-top: 10px;
 }
-.productos__principal .productos__principal h1 {
+.productos__principal h1 {
   text-align: center;
   font-size: 30px;
   color: rgb(244, 101, 48);
   padding: 10px;
 }
-.productos__principal .productos__principal h2 {
+.productos__principal h2 {
   text-align: center;
   font-size: 28px;
   color: rgb(52, 92, 114);
@@ -292,13 +301,9 @@ body {
 .productos__principal .container-fluid .productos__card {
   display: flex;
   flex-direction: column;
-  width: 270px;
-  height: 370px;
   background-color: #ffffff;
   border-radius: 5px;
   border: 2px solid black;
-  padding: 10px;
-  margin-bottom: 20px;
 }
 .productos__principal .container-fluid .productos__card:hover {
   transform: scale(1.1) translateY(-10px);

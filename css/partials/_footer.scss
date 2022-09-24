@@ -1,15 +1,17 @@
 /* FOOTER */
 .footer__container{
     background-color:$colorPrincipal;
-    padding: 20px;
+    padding: 10px;
    
     .footer{
         display: flex;
         justify-content: space-between;
 
         .footer__redes{
-            color: black;
+            text-align: center;
+            color:black;
         }
+            
 
         .footer__redes-logos{
             display: flex;
