@@ -65,7 +65,7 @@ body {
   transition-duration: 0.3s;
 }
 .productos .container-fluid .productos__card:hover {
-  box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
 }
 .productos .container-fluid .productos__card .productos__card-img {
   width: 100%;
@@ -117,46 +117,28 @@ body {
 .footer__container {
   background-color: #345c72;
   padding: 10px;
+  margin-top: auto;
 }
 .footer__container .footer {
-  display: flex;
-  justify-content: space-between;
-}
-.footer__container .footer .footer__redes {
   text-align: center;
-  color: black;
+}
+.footer__container .footer img {
+  width: 200px;
+  margin-bottom: 5px;
 }
 .footer__container .footer .footer__redes-logos {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .footer__container .footer .footer__redes-logos .footer__redes-img img {
-  width: 40px;
-  margin-top: 5px;
-}
-.footer__container .footer .footer__pagos {
-  text-align: center;
-  color: black;
-}
-.footer__container .footer .footer__contacto {
-  text-align: center;
-  color: black;
+  width: 50px;
+  padding: 8px;
+  margin-bottom: 10px;
 }
 .footer__container .footer__copyright {
-  text-align: center;
   color: #f46530;
 }
 
-@media screen and (max-width: 576px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer .footer__contacto {
-    text-align: center;
-  }
-}
 .productos__principal {
   padding: 10px;
   padding-top: 10px;
@@ -185,7 +167,7 @@ body {
   transition-duration: 0.3s;
 }
 .productos__principal .container-fluid .productos__card:hover {
-  box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
 }
 .productos__principal .container-fluid .productos__card .productos__card-img {
   width: 100%;
@@ -345,10 +327,13 @@ body {
 }
 .contacto .contacto__container .contacto__formulario .contacto__boton button {
   font-family: "League Spartan", sans-serif;
+  color: rgb(72, 72, 72);
+  font-weight: 700;
   background-color: rgba(255, 255, 255, 0.7450980392);
   cursor: pointer;
   padding: 5px;
   border-radius: 10px;
+  border: none;
 }
 
 @media screen and (max-width: 850px) {

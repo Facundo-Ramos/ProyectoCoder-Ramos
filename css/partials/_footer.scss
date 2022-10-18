@@ -2,56 +2,34 @@
 .footer__container{
     background-color:$colorPrincipal;
     padding: 10px;
-   
-    .footer{
-        display: flex;
-        justify-content: space-between;
+    margin-top: auto;
 
-        .footer__redes{
-            text-align: center;
-            color:black;
+    .footer{
+       text-align: center;
+       
+        & img{
+            width: 200px; 
+            margin-bottom: 5px; 
         }
-            
 
         .footer__redes-logos{
-            display: flex;
-            justify-content:space-around;
-
+            display:flex;
+            justify-content: center;
+            
             .footer__redes-img{
-                img{
-                    width: 40px;
-                    margin-top: 5px;    
+
+                & img{
+                    width: 50px;
+                    padding: 8px;
+                    margin-bottom: 10px;
                 }
-            } 
-        }
-
-        .footer__pagos{
-            text-align: center;
-            color:black;
-        }
-
-        .footer__contacto{
-            text-align: center;
-            color: black;
+            }
         }
     }
 
     .footer__copyright{
-        text-align: center;
         color:$colorSecundario;
-    } 
-}
-
-@media screen and (max-width: 576px){
-    .footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .footer__contacto{
-            text-align: center;
-        }    
-    }   
+    }
 }
 
 
