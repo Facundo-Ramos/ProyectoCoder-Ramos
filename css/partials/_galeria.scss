@@ -25,6 +25,12 @@
         padding: 10px;
         color: $colorPrincipal;
         margin-top: 50px;
+        transition: .6s;
+
+        &:hover{
+            background:$colorPrincipal ;
+            color:white;
+        }
 
     }     
 }
@@ -50,5 +56,4 @@
             padding: 5px;
         }
     }
- 
 }
