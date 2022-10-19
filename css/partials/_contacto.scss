@@ -80,6 +80,7 @@
 
                 & input, label{
                     cursor: pointer;
+                    color: #ffffff;
                 }
             }
 
@@ -94,7 +95,13 @@
                     cursor: pointer;
                     padding: 5px;
                     border-radius: 10px; 
-                    border: none; 
+                    border: none;
+                    transition: .3s;
+
+                    &:hover{
+                        background-color:rgb(255, 255, 255);
+                        color:#345c72;
+                    }
                 }  
             }
         }
