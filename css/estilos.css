@@ -328,9 +328,9 @@ body {
 }
 .contacto .contacto__container .contacto__formulario .contacto__boton button {
   font-family: "League Spartan", sans-serif;
-  color: rgb(72, 72, 72);
+  color: #345c72;
   font-weight: 700;
-  background-color: rgba(255, 255, 255, 0.7450980392);
+  background-color: #fff;
   cursor: pointer;
   padding: 5px;
   border-radius: 10px;
@@ -338,8 +338,7 @@ body {
   transition: 0.3s;
 }
 .contacto .contacto__container .contacto__formulario .contacto__boton button:hover {
-  background-color: rgb(255, 255, 255);
-  color: #345c72;
+  background-color: rgb(209, 209, 209);
 }
 
 @media screen and (max-width: 850px) {
